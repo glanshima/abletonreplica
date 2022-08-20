@@ -23,17 +23,15 @@ clickEvents('click', '.more-plus', (e) => {
     if (header.matches('.close')) {
         header.classList.remove('close');
         header.classList.add('open');
-        /* header.style.height = '62vh'; */
+
         plusIcon.removeAttribute('name', 'plus')
         plusIcon.setAttribute('name', 'minus')
         menuToggleState = 'open';
-        if (windowWidth <= 1022 + "px") {
-            navDiv.classList.add('.open')
-        }
+
     } else {
         header.classList.add('close');
         header.classList.remove('open');
-        /* header.style.height = '12vh'; */
+
         plusIcon.removeAttribute('name', 'minus')
         plusIcon.setAttribute('name', 'plus')
         menuToggleState = 'close';
@@ -46,8 +44,7 @@ document.addEventListener('keydown', (e) => {
     if (e.target == "Escape") {
         header.classList.remove('close');
         header.classList.add('open');
-        navDiv.classList.remove('close');
-        navDiv.classList.add('open');
+
         /* header.style.height = '62vh'; */
         plusIcon.removeAttribute('name', 'plus')
         plusIcon.setAttribute('name', 'minus')
@@ -55,8 +52,7 @@ document.addEventListener('keydown', (e) => {
     } else {
         header.classList.add('close');
         header.classList.remove('open');
-        navDiv.classList.remove('open');
-        navDiv.classList.add('close');
+
         header.style.height = '12vh';
         plusIcon.removeAttribute('name', 'minus')
         plusIcon.setAttribute('name', 'plus')
