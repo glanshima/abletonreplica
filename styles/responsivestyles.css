@@ -1,0 +1,327 @@
+/* #0b0a10
+#151320
+#201d30
+#2a2640
+#353050
+Complementary Color
+#151320	#1e2013 */
+
+:root {
+    --pale-yellow: #fbffa7;
+    --pale-blue: #b1c5ff;
+    --light-red: #ff764d;
+    --pale-violet: #d5b3ff;
+    --pale-lime-green: #b6ffc0;
+    --pure-blue: #0000ff;
+    --chalk-white: #f1f1f1;
+    --white: #f3f3f3;
+    --pale-black: #3c3a3a;
+    --black: #020202;
+    --gray: #898989;
+    --crimson: #dc143c;
+    --shade-of-black: #151320;
+    --almost-white-gray: #e9e9e9;
+    --ff-old-standardTT: 'Lobster', cursive;
+    --ff-lobster: 'Lobster', cursive;
+    --ff-Tiro: 'Tiro Gurmukhi', serif;
+    --fs-xl: 5rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+    --fw-sm: 300;
+    --fw-md: 500;
+    --fw-b: 600;
+    --fw-Xb: 800;
+    --fw-xxl: 900;
+}
+
+
+/*
+@media screen and (min-width: 63.9375em) {
+   
+    .collapsed-menu.wide-collapsed .collapsed-nav-list-top li {
+        font-size: clamp(.850rem, 1.2rem + 1vw, 1.5rem);
+    }
+} */
+
+@media screen and (max-width: 63.9375em) {
+    .header {
+        gap: .550rem;
+        transition: .5s;
+        padding-left: .550rem;
+    }
+    .logo-div {
+        padding: 0.55rem;
+        z-index: 1500;
+    }
+    .primary-nav-div {
+        display: none;
+    }
+    /* Responsive Menu  */
+    .responsive-menu {
+        display: flex;
+        height: 10vh;
+        align-items: center;
+        z-index: 1700;
+    }
+    .responsive-menu ul {
+        display: flex;
+        padding: 0 .3rem;
+        width: 100%;
+    }
+    .responsive-menu li {
+        list-style-type: none;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 100;
+        font-family: var(--font-Tiro);
+        gap: .5rem;
+        user-select: none;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+    .responsive-menu li i {
+        font-size: 1.5rem;
+        font-weight: var(--fw-Xb);
+        transition: .5s;
+    }
+    .responsive-menu span {
+        display: flex;
+        margin-left: .1rem;
+        margin-top: .1rem;
+        transition: .5s;
+    }
+    .responsive-menu .menu-icon:hover {
+        border-top: 1px solid var(--pale-blue);
+        border-radius: 1rem;
+        /* filter: drop-shadow(0 0 0.75rem var(--pure-blue)); */
+    }
+    /* Slide in Navigation */
+    .responsive-navigation {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: var(--pure-blue);
+        opacity: 1;
+        top: 0;
+        transform: translateY(-500%);
+        /* 10.5vh when opened -100 when closed */
+        left: 0;
+        padding: clamp( 1rem, 1.5rem, 2rem);
+        width: 100%;
+        min-height: 100vh;
+        transition: transform .85s ease-in-out;
+        z-index: 1001;
+    }
+    /* slide in Navigation */
+    .slidein-nav .slide-in {
+        flex: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: fit-content;
+        width: 60%;
+    }
+    .slidein-nav .slide-in ul {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .slidein-nav .slide-in li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+    .slidein-nav .slide-in a {
+        text-decoration: none;
+        font-family: 'Tiro Gurmukhi', serif;
+        font-weight: 400;
+        color: var(--white);
+        display: block;
+        width: 100%;
+        min-height: 100%;
+        padding: 0.5rem;
+        align-items: center;
+        list-style-type: none;
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        transition: .5s;
+    }
+    .main-nav a:hover,
+    .user-div.responsive .cta-free-trial.responsive a:hover {
+        color: var(--black);
+        background: linear-gradient(to right, var(--white), var(--pure-blue)) 70%;
+        font-weight: 600;
+        padding-left: 1rem;
+        border-top: 1px solid var(--white);
+        border-bottom: 1px solid var(--white);
+        border-radius: .3rem;
+    }
+    .main-nav a:active {
+        color: var(--light-red);
+    }
+    .user-div.responsive {
+        display: block;
+        flex-direction: column;
+        width: 40%;
+        justify-content: left;
+    }
+    .user-div.responsive .cta-free-trial.responsive a {
+        display: block;
+        color: var(--white);
+        text-decoration: none;
+        font-family: 'Tiro Gurmukhi', serif;
+        font-weight: 300;
+        list-style-type: none;
+        letter-spacing: 1.2px;
+        font-size: 1.2em;
+        padding: 0.5rem;
+        width: 100%;
+    }
+    .user-auth.responsive {
+        width: 100%;
+        display: block;
+        align-items: center;
+        transform: translateX(-2%);
+    }
+    .user-auth-items.responsive {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        gap: .3rem;
+    }
+    .user-auth-items.responsive li:nth-child(2) {
+        width: fit-content;
+    }
+    .user-auth-items.responsive li {
+        display: inline-block;
+        padding: .3rem 0;
+        border: 1px solid rgb(115, 115, 250, .5);
+        border-radius: .345rem;
+        transition: .5s;
+        text-align: center;
+        width: calc(70%/2);
+    }
+    .user-auth-items.responsive li:hover {
+        filter: brightness(120);
+    }
+    .user-auth-items.responsive .list-paragraph {
+        border: none;
+    }
+    /* .user-auth-items.responsive a, */
+    .user-auth-items.responsive p {
+        text-decoration: none;
+        font-weight: 300;
+        color: var(--white);
+        font-size: 1.3rem;
+        line-height: 1.5;
+        list-style-type: none;
+        font-family: 'Tiro Gurmukhi', serif;
+    }
+    .user-auth-items.responsive a:active {
+        color: var(--light-red);
+    }
+    /* COLLAPSED MENU */
+    .collapsed-menu-responsive {
+        width: 100%;
+        order: 2;
+        display: block;
+        flex-direction: column;
+        z-index: 500;
+        position: relative;
+        min-height: fit-content;
+    }
+    .collapsed-menu-responsive ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+        gap: 1.5em;
+    }
+    .collapsed-menu-responsive li {
+        list-style-type: none;
+    }
+    .collapsed-nav-list-top.responsive {
+        z-index: 500;
+    }
+    .collapsed-nav-list-top a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 1.2;
+        display: inline-block;
+        width: fit-content;
+        color: var(--white);
+    }
+    .collapsed-nav-list-top a:hover {
+        border: 1px solid var(--pale-black);
+        border-radius: .3rem;
+        padding: .2rem .4rem;
+    }
+    .collapsed-nav-list-top a:active {
+        color: var(--light-red);
+    }
+    .collapsed-menu-responsive h3 {
+        font-size: 1.5rem;
+    }
+    .menu-h3 {
+        padding: .5em;
+        margin-bottom: .4rem;
+        color: var(--white);
+    }
+    .menu-scroll {
+        width: 100vw;
+    }
+    .menu-scroll .scroll-list {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        width: 100%;
+    }
+    .menu-scroll .scroll-list li {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 1em;
+        margin-inline-end: 1em;
+    }
+    .collapsed-nav-links-bottom.responsive {
+        z-index: 500;
+        width: 100%;
+        overflow-x: scroll;
+        padding: auto 0;
+    }
+    .collapsed-nav-links-bottom.responsive a {
+        text-decoration: none;
+        font-size: .879rem;
+        line-height: 1.5;
+        color: var(--white);
+        display: block;
+        padding: .3rem .5rem;
+    }
+    .collapsed-nav-links-bottom.responsive span {
+        display: block;
+        margin-bottom: .4rem;
+        font-family: 'Tiro Gurmukhi', serif;
+        font-weight: var(--fw-md);
+    }
+    .sticky-nav-header.scrolled {
+        padding: .870rem 0;
+        z-index: 1700;
+        position: sticky;
+        display: none;
+        top: 0;
+    }
+    .scrolled {
+        display: flex;
+    }
+    .sticky-nav {
+        width: 50%;
+        align-self: flex-start;
+        display: flex;
+        padding-left: clamp(.5rem, .580rem, 3rem);
+    }
+}
