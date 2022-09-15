@@ -392,7 +392,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/images/header.png');
+    background-image: url('images/header.png');
     background-size: 80% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -477,7 +477,7 @@
 
 .img-photo-2 {
     display: inline-block;
-    background-image: url(/images/photo-2.jpg);
+    background-image: url(images/photo-2.jpg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -492,7 +492,7 @@
 }
 
 .img-photo-1 {
-    background-image: url(/images/photo-1.jpg);
+    background-image: url(images/photo-1.jpg);
     background-size: cover;
     width: 41.66667vw;
     height: 41.6667vw;
@@ -534,7 +534,7 @@
 .img-photo-3 {
     width: 30.333vw;
     height: 25.333vw;
-    background-image: url(/images/photo-3.jpg);
+    background-image: url(images/photo-3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -545,7 +545,7 @@
 .img-photo-4 {
     width: 30.333vw;
     height: 25.333vw;
-    background-image: url(/images/photo-4.jpg);
+    background-image: url(images/photo-4.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -553,7 +553,7 @@
 }
 
 .img-photo-5 {
-    background-image: url(/images/photo-5.jpg);
+    background-image: url(images/photo-5.jpg);
     background-size: cover;
     width: 40.333vw;
     height: 50vw;
@@ -598,7 +598,7 @@
 .img-photo-6 {
     width: 32.333vw;
     height: 25.533vw;
-    background-image: url(/images/photo-6-a.jpg);
+    background-image: url(images/photo-6-a.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -606,7 +606,7 @@
 }
 
 .img-photo-7 {
-    background-image: url(/images/photo-7.jpg);
+    background-image: url(images/photo-7.jpg);
     background-size: cover;
     width: 43.533vw;
     height: 42vw;
@@ -629,7 +629,7 @@
 .img-photo-8 {
     width: 100%;
     height: 100%;
-    background-image: url(/images/photo-8.jpg);
+    background-image: url(images/photo-8.jpg);
     background-position: 100%;
     background-size: cover;
     background-repeat: no-repeat;
