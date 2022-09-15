@@ -1,0 +1,141 @@
+:root {
+    /* colors */
+    --maximum-blue-green_10: hsla(185, 75%, 45%, 0.1);
+    --rich-black-fogra-29: hsl(217, 28%, 9%);
+    --gray-x-li-gray: hsl(0, 0%, 74%);
+    --oxford-blue_60: hsla(230, 41%, 14%, 0.6);
+    --bittersweet: hsl(5, 100%, 69%);
+    --smoky-black: rgb(7, 6, 1);
+    --gainsboro: hsl(0, 0%, 88%);
+    --black_90: hsla(0, 0%, 0%, 0.9);
+    --cultured: hsl(200, 12%, 95%);
+    --salmon: hsl(5, 100%, 73%);
+    --onyx: hsl(0, 0%, 27%);
+    --pale-yellow: #fbffa7;
+    --pale-blue: #b1c5ff;
+    --light-red: #ff764d;
+    --pale-violet: #d5b3ff;
+    --pale-lime-green: #b6ffc0;
+    --pure-blue: #0000ff;
+    --chalk-white: #f1f1f1;
+    --white: #f3f3f3;
+    --pale-black: #3c3a3a;
+    --black: #020202;
+    --gray: #898989;
+    --crimson: #dc143c;
+    --shade-of-black: #151320;
+    --almost-white-gray: #e9e9e9;
+    --black-russian: #0b0a10;
+    --mostly-black-blue: #151320;
+    --mostly-black-blue-b: #201d30;
+    --shade-of-green: #24301d;
+    --shade-of-purple: #201d30;
+    --shade-of-brown: #302a1d;
+    --very-dark-olive-tone: #1e2013;
+    --very-dark-desaturated-blue: #2a2640;
+    --very-dark-desaturated-blue-b: #353050;
+    /* Topography  */
+    --ff-old-standardTT: 'Lobster', cursive;
+    --ff-lobster: 'Lobster', cursive;
+    --ff-Tiro: 'Tiro Gurmukhi', serif;
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-josefin-sans: 'JosefinSans', sans-serif;
+    --fs-xl: 5rem;
+    --fs-1: 3rem;
+    --fs-2: 2.6rem;
+    --fs-3: 2.2rem;
+    --fs-4: 2rem;
+    --fs-5: 1.8rem;
+    --fs-6: 1.6rem;
+    --fs-7: 1.4rem;
+    --fs-8: 1.2rem;
+    --fs-9: 1rem;
+    --fs-s: .580rem;
+    --fw-300: 300;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-Xb: 800;
+    --fw-xxl: 900;
+    /* Transitions */
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --cubic-out: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-in: cubic-bezier(0.33, 0.85, 0.56, 1.02);
+}
+
+
+/* --------------- 
+RESET
+ --------------- */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+img,
+span,
+table,
+tbody,
+button,
+i {
+    display: block;
+    outline: none;
+}
+
+button,
+input {
+    background: none;
+    font: inherit;
+    border: none;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-size: normal;
+    line-height: 1.8;
+}
+
+html {
+    font-family: var(--ff-josefin-sans);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+ ::-webkit-scrollbar {
+    width: 20px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 95%);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 70%);
+}
