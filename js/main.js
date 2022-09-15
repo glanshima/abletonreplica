@@ -42,7 +42,6 @@ window.addEventListener('resize', () => {
 
 
 
-
 clickEvents('click', '.more-plus', (e) => {
     if (header.matches('.close')) {
         header.classList.remove('close');
