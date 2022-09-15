@@ -357,6 +357,11 @@
         font-weight: var(--fw-md);
         font-size: var(--fs-5);
     }
+    .sticky-nav-header.sticky {
+        position: fixed;
+        top: 0;
+        transition: .5s ease-in-out;
+    }
     /* CONTENT STYLES */
     .head-section {
         height: calc(150vh /2);
