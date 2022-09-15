@@ -358,7 +358,7 @@
         font-size: var(--fs-5);
     }
     /* CONTENT STYLES */
-    .head-section {
+    /*   .head-section {
         height: calc(150vh /2);
         width: 100%;
         display: flex;
@@ -368,7 +368,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-    }
+    } */
     .content .hero-text {
         width: 100%;
         padding: 2rem;
